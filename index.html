@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <section>
+      <div class="center">
+        <input
+          type="text"
+          placeholder="Enter a task"
+          id="task-input"
+          class="input"
+        />
+        <button class="add-btn" id="add-btn">ADD</button>
+      </div>
+      <div class="window-container center">
+        <div
+          id="open-container"
+          class="open-container"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+        >
+          <h6 class="title">OPEN</h6>
+          <div id="open-tasks" class="open-tasks task-list">
+            <!-- <div id="task" class="task" draggable="true" ondragstart="drag(event)">
+              <div class="task-wrapper">
+                <div class="status-bar"></div>
+                <p class="task-name">Task</p>
+                <div class="description-wrapper">
+                  <div class="input-wrapper">
+                    <input type="text" class="description-input" />
+                    <button class="save-btn">SAVE</button>
+                  </div>
+                  <p class="description-text">
+                    description Task
+                  </p>
+                </div>
+              </div>
+            </div> -->
+
+
+          </div>
+        </div>
+        <div id="inprogress-container" class="inprogress-container">
+          <h6 class="title">IN PROGRESS</h6>
+          <div
+            id="inprogress-tasks"
+            class="inprogress-tasks task-list"
+            ondrop="drop(event)"
+            ondragover="allowDrop(event)"
+          ></div>
+        </div>
+        <div id="inreview-container" class="inreview-container">
+          <h6 class="title">IN REVIEW</h6>
+          <div
+            id="inreview-tasks"
+            class="inreview-tasks task-list"
+            ondrop="drop(event)"
+            ondragover="allowDrop(event)"
+          ></div>
+        </div>
+        <div id="done-container" class="done-container">
+          <h6 class="title">DONE</h6>
+          <div
+            id="done-tasks"
+            class="done-tasks task-list"
+            ondrop="drop(event)"
+            ondragover="allowDrop(event)"
+          ></div>
+        </div>
+      </div>
+
+      <!-- modal -->
+      <div class="popup">
+        <header class="descr-header">Description</header>
+        <div class="input-wrapper center">
+          <input
+            type="text"
+            class="input descr-input"
+            placeholder="Write Description"
+          />
+        </div>
+        <footer class="descr-footer center">
+          <button class="save-btn btn">SAVE</button>
+          <button class="cancel-btn btn">CANCEL</button>
+        </footer>
+      </div>
+    </section>
+  </body>
+</html>

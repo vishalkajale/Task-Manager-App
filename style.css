@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+     height: 100vh;
+     background: linear-gradient(to right, #104db3,#24d2fc);
+}
+
+section {
+    margin-top: 30px;
+}
+
+.window-container {
+    padding-top: 16px;
+}
+
+.window-container>div {
+    background-color: #f0cec9;
+    border-radius: 6px;
+    color: #000;
+    margin: 16px;
+    max-width: 280px;
+    padding: 12px;
+    width: 30%;
+}
+
+.center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.add-btn,
+.btn {
+    background-image: linear-gradient(to right, gold, red);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 22px;
+    margin: 8px 12px;
+    padding: 4px 12px;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.input {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 22px;
+    height: 34px;
+    margin: 8px 0;
+    padding: 12px;
+    width: 300px;
+}
+
+.title {
+    font-size: 16px;
+}
+
+.task-list {
+    border-radius: 6px;
+    height: 400px;
+    margin-top: 24px;
+}
+
+.task-name {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.task {
+    background-color: #f5f9fb;
+    border: 1px solid #e8e8e8;
+    border-radius: 6px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin:0 6px 6px  6px;
+    padding: 0 8px;
+    width: 96%;
+}
+
+.description-wrapper {
+    font-size: 14px;
+}
+
+p {
+    font-size: 14px;
+}
+
+.status-bar {
+    border-radius: 4px;
+    height: 6px;
+    margin: 6px;
+    width: 25px;
+    background-color: #ff2a2a;
+}
+
+
+.popup {
+    background-color: #104db3;
+    border-radius: 16px;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0); 
+    transition: all 0.3s ease-in-out;
+    visibility: hidden;
+    width: 400px;
+}
+
+.open-popup {
+    transform: translate(-50%, -50%) scale(1);
+    visibility: visible;
+}
+
+.descr-header,
+.descr-footer {
+    font-size: 22px;
+    font-weight: 600;
+    height: 40px;
+    padding: 6px 16px;
+}
+
+.descr-footer {
+    justify-content: center;
+    margin: 10px;
+}
+
+.input-wrapper {
+    height: 100px;
+}
+
+/* .descr-input {
+    height: 40px;
+    margin: 8px 0;
+    padding: 6px;
+    width: 80%;
+} */
+
+.btn {
+    font-size: 12px;
+    margin: 0 8px;
+    padding: 6px 8px;
+}
